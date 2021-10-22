@@ -1,3 +1,4 @@
+![](https://www.visa.com/images/merchantoffers/2020-12/1607375417401.1110x340px_-_smartvitrine_-_alura.jpg)
 # C#: Testes de unidade e TDD com xUnit
 
 ## Conteúdo do curso:
