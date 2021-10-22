@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AluraTestsCourse.LeilaoOnline.Core\AluraTestsCourse.LeilaoOnline.Core.csproj" />
+  </ItemGroup>
+
+</Project>

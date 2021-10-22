@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31512.422
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56F987BF-D634-43C8-82C0-16A10FFD514C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{298EEBB6-7381-4754-BA03-9E447E82B34D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraTestsCourse.LeilaoOnline.Core", "AluraTestsCourse.LeilaoOnline.Core\AluraTestsCourse.LeilaoOnline.Core.csproj", "{F7333146-F435-4412-B206-99A70334AC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraTestsCourse.LeilaoOnline.ConsoleApp", "AluraTestsCourse.LeilaoOnline.ConsoleApp\AluraTestsCourse.LeilaoOnline.ConsoleApp.csproj", "{3A9B617D-C52A-4B27-BB58-3A06E12A905A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AluraTestsCourse.LeilaoOnline.Tests", "AluraTestsCourse.LeilaoOnline.Tests\AluraTestsCourse.LeilaoOnline.Tests.csproj", "{C3241483-0910-4906-A2C8-D9C158F44E0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7333146-F435-4412-B206-99A70334AC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7333146-F435-4412-B206-99A70334AC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7333146-F435-4412-B206-99A70334AC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7333146-F435-4412-B206-99A70334AC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9B617D-C52A-4B27-BB58-3A06E12A905A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9B617D-C52A-4B27-BB58-3A06E12A905A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9B617D-C52A-4B27-BB58-3A06E12A905A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9B617D-C52A-4B27-BB58-3A06E12A905A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3241483-0910-4906-A2C8-D9C158F44E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3241483-0910-4906-A2C8-D9C158F44E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3241483-0910-4906-A2C8-D9C158F44E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3241483-0910-4906-A2C8-D9C158F44E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7333146-F435-4412-B206-99A70334AC73} = {56F987BF-D634-43C8-82C0-16A10FFD514C}
+		{3A9B617D-C52A-4B27-BB58-3A06E12A905A} = {298EEBB6-7381-4754-BA03-9E447E82B34D}
+		{C3241483-0910-4906-A2C8-D9C158F44E0A} = {298EEBB6-7381-4754-BA03-9E447E82B34D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECAD4360-8700-4F09-8350-05F08E89BD5A}
+	EndGlobalSection
+EndGlobal
