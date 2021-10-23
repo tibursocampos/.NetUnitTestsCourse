@@ -16,16 +16,20 @@ namespace AluraTestsCourse.LeilaoOnline.Core
     {
         private Interessada _ultimoCliente;
         private IList<Lance> _lances;
+        private string v;
+        private IModalidadeAvaliacao avaliador;
+
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
         public EstadoLeilao Estado { get; private set; }
 
-        public Leilao(string peca)
+        public Leilao(string peca, IModalidadeAvaliacao avaliador)
         {
             Peca = peca;
             _lances = new List<Lance>();
             Estado = EstadoLeilao.LeilanAntesDoPregao;
+            this.avaliador = avaliador;
         }
 
         private bool NovoLanceEhAceito(Interessada cliente, double valor)
@@ -51,11 +55,35 @@ namespace AluraTestsCourse.LeilaoOnline.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances
-                .DefaultIfEmpty(new Lance(null, 0))
-                .OrderBy(l => l.Valor)
-                .LastOrDefault();
+            if (Estado != EstadoLeilao.LeilaoEmAndamento)
+            {
+                throw new System.InvalidOperationException();
+            }
+
+            Ganhador = this.avaliador.Avalia(this);
             Estado = EstadoLeilao.LeilaoFinalizado;
+
+            // Após criada a interface para desacoplamento
+            //if (ValorDestino > 0)
+            //{
+            //    // modalidade oferta superior mais próxima
+            //    Ganhador = Lances
+            //        .DefaultIfEmpty(new Lance(null, 0))
+            //        .Where(l => l.Valor > ValorDestino)
+            //        .OrderBy(l => l.Valor)
+            //        .FirstOrDefault();
+            //}
+            //else
+            //{
+            //    // modalidade maior valor
+            //    Ganhador = Lances
+            //        .DefaultIfEmpty(new Lance(null, 0))
+            //        .OrderBy(l => l.Valor)
+            //        .LastOrDefault();
+
+            //    Estado = EstadoLeilao.LeilaoFinalizado;
+            //}
+
         }
 
 

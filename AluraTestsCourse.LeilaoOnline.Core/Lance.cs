@@ -10,6 +10,10 @@ namespace AluraTestsCourse.LeilaoOnline.Core
         public double Valor {  get; }
         public Lance(Interessada cliente, double valor)
         {
+            if(valor < 0)
+            {
+                throw new ArgumentException("Valor do lance não pode ser negativo, deve ser maior que zero.");
+            }
             Cliente = cliente;
             Valor = valor;
         }
