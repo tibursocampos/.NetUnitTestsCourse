@@ -9,3 +9,5 @@
 - Refatore seu código com maior segurança
 - Teste as exceções do seu sistema
 - Use os testes para ajudar no design de suas classes e métodos
+
+Mais informações sobre o curso em: [C#: Testes de unidade e TDD com xUnit](https://cursos.alura.com.br/course/tdd-csharp-xunit)
